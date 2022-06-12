@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+button {
+    @apply px-4 py-2;
+    @apply bg-blue-700 text-white;
+    @apply rounded-lg;
+}
+
+input {
+    @apply px-4 py-2;
+    @apply bg-gray-200;
+    @apply rounded-lg;
+}
