@@ -1,6 +1,6 @@
 <div class="flex justify-between items-center">
     <!-- Walk as if you are kissing the Earth with your feet. - Thich Nhat Hanh -->
-    <a href="/" class="font-bold">hello</a>
+    <a href="/" class="font-bold">Events@INP-HB</a>
     <ul class="flex gap-2 items-center">
         @auth
         <li>
