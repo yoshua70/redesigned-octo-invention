@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\UserProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,8 +19,26 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+/**
+ * User registration.
+ */
 Route::get('/inscription', [UserController::class, 'create'])->name('register');
+Route::post('/users', [UserController::class, 'store']);
+
+/**
+ * User authentication.
+ */
 Route::get('/connexion', [UserController::class, 'login'])->name('login');
 Route::post('/users/authenticate', [UserController::class, 'authenticate']);
+
+/**
+ * User logout.
+ */
 Route::post('/logout', [UserController::class, 'logout']);
-Route::post('/users', [UserController::class, 'store']);
+
+/**
+ * User profile.
+ */
+Route::get('/profile', [UserProfileController::class, 'profile'])->name('profile');
+Route::post('/profile', [UserProfileController::class, 'store']);
+

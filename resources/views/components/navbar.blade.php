@@ -4,7 +4,7 @@
     <ul class="flex gap-2 items-center">
         @auth
         <li>
-            <a href="#" class="text-capitalize">{{ auth()->user()->name }}</a>
+            <a href="{{ URL::route('profile') }}" class="text-capitalize">{{ auth()->user()->name }}</a>
         </li>
         <li>
             <form method="POST" action="/logout" class="inline">

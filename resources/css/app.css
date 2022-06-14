@@ -8,8 +8,17 @@ button {
     @apply rounded-lg;
 }
 
-input {
+input,
+textarea {
     @apply px-4 py-2;
     @apply bg-gray-200;
     @apply rounded-lg;
+}
+
+.alert {
+    @apply bg-blue-500;
+    @apply text-white;
+    @apply px-4 py-4;
+    @apply rounded-md;
+    @apply drop-shadow-md;
 }
