@@ -12,7 +12,7 @@ class UserProfileController extends Controller
     /**
      * Return the view for the user profile.
      */
-    public function profile()
+    public function index()
     {
         $user = User::find(auth()->user()->id);
 

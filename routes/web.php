@@ -40,7 +40,7 @@ Route::post('/logout', [UserController::class, 'logout']);
 /**
  * User profile.
  */
-Route::get('/profile', [UserProfileController::class, 'profile'])->name('profile');
+Route::get('/profile', [UserProfileController::class, 'index'])->name('profile');
 Route::post('/profile', [UserProfileController::class, 'store']);
 
 /**
