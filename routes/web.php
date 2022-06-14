@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\UserProfileController;
@@ -42,3 +43,7 @@ Route::post('/logout', [UserController::class, 'logout']);
 Route::get('/profile', [UserProfileController::class, 'profile'])->name('profile');
 Route::post('/profile', [UserProfileController::class, 'store']);
 
+/**
+ * Display user's post.
+ */
+Route::get('/posts/{username}', [PostController::class, 'index']);

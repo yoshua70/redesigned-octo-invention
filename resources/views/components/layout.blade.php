@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
-        <link type="text/css" href="css/app.css" rel="stylesheet">
+        <link type="text/css" href="/css/app.css" rel="stylesheet">
 
         <!-- FontAwesome -->
         <script src="https://kit.fontawesome.com/1e0d5bb052.js" crossorigin="anonymous"></script>
