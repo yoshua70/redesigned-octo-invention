@@ -2,8 +2,8 @@
     <x-slot name="title">
         Events@INP-HB
     </x-slot>
-    <div class="flex flex-col gap-8 justify-center px-4 py-4 bg-gradient-to-br from-orange-500 to-orange-700 text-white min-h-screen">
-        <h1 class="text-5xl font-extrabold">ça se passe ce week-end.</h1>
+    <div class="flex flex-col gap-8 justify-center px-4 py-4">
+        <h1 class="text-5xl font-extrabold font-sans">Events at INP-HB</h1>
         <p>Ne ratez rien de ce qui se passe sur la cité.</p>
         <div>
             <button>

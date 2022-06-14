@@ -5,7 +5,11 @@ module.exports = {
         "./resources/**/*.vue",
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                sans: ["Nunito", "ui-sans-serif"],
+            },
+        },
     },
     plugins: [],
 };
